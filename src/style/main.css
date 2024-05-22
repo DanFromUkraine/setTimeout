@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: minmax(100px, auto) minmax(500px, 5fr) minmax(100px, auto);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 40px;
+}
+.header img {
+  width: 50px;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 20px;
+}
+.header ul li,
+.header ul a {
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.header ul li:hover,
+.header ul a:hover {
+  color: gold;
+}
+
+.gallary {
+  display: grid;
+  width: 80%;
+  margin: 140px auto;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallary .gallary_item {
+  display: grid;
+  align-content: space-between;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.gallary .gallary_item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.gallary .gallary_item .card_content {
+  gap: 20px;
+  padding: 20px;
+  align-self: end;
+}/*# sourceMappingURL=main.css.map */
+.btn {
+    background-color: tomato;
+    /* width: 50px; */
+    padding: 20px 15px;
+    margin: 50px auto;
+    font-size: auto;
+}
+
+.modal {
+    display: none;
+}
+
+.modal_active {
+    width: 500px;
+    height: 300px;
+    background-color: grey;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 1px solid tomato;
+}
